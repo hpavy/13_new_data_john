@@ -16,7 +16,7 @@ time_start = time.time()
 
 ############# VARIABLES ################
 
-folder_result_name = "7_stronger"  # name of the result folder
+folder_result_name = "2_huge"  # name of the result folder
 folder_result = "results/" + folder_result_name
 
 
@@ -32,12 +32,12 @@ hyper_param_init = {
     "save_rate": 50,  # rate to save
     "weight_data": 1,
     "weight_pde": 1,
-    "batch_size": 5000,  # for the pde
+    "batch_size": 4000,  # for the pde
     "nb_points_pde": 1000000,  # Total number of pde points
     "Re": 100,
     "lr_init": 1e-3,  # Learning rate at the begining of training
-    "gamma_scheduler": 0.999,  # Gamma scheduler for lr
-    "nb_layers": 1,
+    "gamma_scheduler": 0.997,  # Gamma scheduler for lr
+    "nb_layers": 15,
     "nb_neurons": 64,
     "n_pde_test": 5000,
     "n_data_test": 5000,
